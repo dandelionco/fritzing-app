@@ -1,0 +1,1425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D073DB0D-1F7A-3CC1-BE3E-63C63EA5EECF}</ProjectGuid>
+    <RootNamespace>Fritzing</RootNamespace>
+    <Keyword>QtVS_v302</Keyword>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.18362.0</WindowsTargetPlatformMinVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>..\release32\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>..\release32\</IntermediateDirectory>
+    <PrimaryOutput>Fritzing</PrimaryOutput>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>..\debug32\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>..\debug32\</IntermediateDirectory>
+    <PrimaryOutput>Fritzing</PrimaryOutput>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">
+    <QtMsBuild>$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <QtInstall>5.14</QtInstall>
+    <QtModules>core;xml;sql;network;gui;svg;widgets;serialport;printsupport;concurrent</QtModules>
+    <QtHeaderSearchPath>C:\Users\richd\Documents\code\tools\zlib;$(QtHeaderSearchPath)</QtHeaderSearchPath>
+    <QtLibrarySearchPath>$(QtLibrarySearchPath)</QtLibrarySearchPath>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <QtInstall>5.14</QtInstall>
+    <QtModules>core;xml;sql;network;gui;svg;widgets;serialport;printsupport;concurrent</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\release32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Fritzing</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\debug32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Fritzing</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;$(QTDIR)\include/QtZlib;C:\Users\richd\Documents\code\tools\fritzing\libgit2\include;src/lib/boost_1_72_0;..\boost_1_72_0;$(QTDIR)\include;C:\Users\richd\Documents\code\tools\fritzing\release32;/include;$(QTDIR)\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -O3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>..\release32\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_WINDOWS;GIT_VERSION="CD-506-49-g28bf1839";GIT_DATE="2020-02-05T17:29:11+01:00";BUILD_DATE="2020-02-05T23:57:36.6240711-08:00";QT_NO_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\Users\richd\Documents\code\tools\fritzing\libgit2\build32\Release\git2.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\richd\Documents\code\tools\fritzing\libgit2\build32\Release;C:\opensslx86\lib;C:\Utils\my_sql\mysql-5.7.25-win32\lib;C:\Utils\postgresqlx86\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\Fritzing.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_WINDOWS;GIT_VERSION=\"CD-506-49-g28bf1839\";GIT_DATE=\"2020-02-05T17:29:11+01:00\";BUILD_DATE=\"2020-02-05T23:57:36.6240711-08:00\";QT_NO_DEBUG;QT_PRINTSUPPORT_LIB;QT_SVG_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CONCURRENT_LIB;QT_NETWORK_LIB;QT_SERIALPORT_LIB;QT_SQL_LIB;QT_XML_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>C:/Users/richd/Documents/code/tools/fritzing/$(Configuration)32/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <InitFuncName>phoenixresources</InitFuncName>
+      <Compression>default</Compression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>..\$(Configuration)32</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <QtUicDir>..\$(Configuration)32</QtUicDir>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+    </QtUic>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;$(QTDIR)\include/QtZlib;C:\Users\richd\Documents\code\tools\fritzing\libgit2\include;src/lib/boost_1_72_0;..\boost_1_72_0;$(QTDIR)\include;C:\Users\richd\Documents\code\tools\fritzing\debug32;/include;$(QTDIR)\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -O3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>..\debug32\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;_CRT_SECURE_NO_DEPRECATE;_WINDOWS;GIT_VERSION="CD-506-49-g28bf1839";GIT_DATE="2020-02-05T17:29:11+01:00";BUILD_DATE="2020-02-05T23:57:38.9338550-08:00";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\Users\richd\Documents\code\tools\fritzing\libgit2\build32\Release\git2.lib;shell32.lib;C:\Users\richd\Documents\code\tools\zlib\lib\dll32\zlibwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\richd\Documents\code\tools\zlib\lib\dll32;C:\Users\richd\Documents\code\tools\fritzing\libgit2\build32\Release;C:\opensslx86\lib;C:\Utils\my_sql\mysql-5.7.25-win32\lib;C:\Utils\postgresqlx86\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\Fritzing.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;_CRT_SECURE_NO_DEPRECATE;_WINDOWS;GIT_VERSION=\"CD-506-49-g28bf1839\";GIT_DATE=\"2020-02-05T17:29:11+01:00\";BUILD_DATE=\"2020-02-05T23:57:38.9338550-08:00\";QT_PRINTSUPPORT_LIB;QT_SVG_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CONCURRENT_LIB;QT_NETWORK_LIB;QT_SERIALPORT_LIB;QT_SQL_LIB;QT_XML_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <QtUicDir>..\$(Configuration)32</QtUicDir>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+    </QtUic>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>C:/Users/richd/Documents/code/tools/fritzing/$(Configuration)32/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+    </QtMoc>
+    <QtRcc>
+      <Compression>default</Compression>
+      <InitFuncName>phoenixresources</InitFuncName>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>..\$(Configuration)32</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\autoroute\cmrouter\DBcell.cpp" />
+    <ClCompile Include="src\lib\qtsysteminfo\QtSystemInfo.cpp" />
+    <ClCompile Include="src\help\aboutbox.cpp" />
+    <ClCompile Include="src\utils\autoclosemessagebox.cpp" />
+    <ClCompile Include="src\autoroute\autorouteprogressdialog.cpp" />
+    <ClCompile Include="src\autoroute\autorouter.cpp" />
+    <ClCompile Include="src\autoroute\autoroutersettingsdialog.cpp" />
+    <ClCompile Include="src\utils\bendpointaction.cpp" />
+    <ClCompile Include="src\utils\bezier.cpp" />
+    <ClCompile Include="src\utils\bezierdisplay.cpp" />
+    <ClCompile Include="src\partsbinpalette\binmanager\binmanager.cpp" />
+    <ClCompile Include="src\items\breadboard.cpp" />
+    <ClCompile Include="src\sketch\breadboardsketchwidget.cpp" />
+    <ClCompile Include="src\connectors\bus.cpp" />
+    <ClCompile Include="src\connectors\busshared.cpp" />
+    <ClCompile Include="src\items\capacitor.cpp" />
+    <ClCompile Include="src\utils\clickablelabel.cpp" />
+    <ClCompile Include="src\items\clipablewire.cpp" />
+    <ClCompile Include="src\autoroute\cmrouter\cmrouter.cpp" />
+    <ClCompile Include="src\commands.cpp" />
+    <ClCompile Include="src\connectors\connector.cpp" />
+    <ClCompile Include="src\connectors\connectoritem.cpp" />
+    <ClCompile Include="src\connectors\connectorshared.cpp" />
+    <ClCompile Include="src\program\console.cpp" />
+    <ClCompile Include="src\program\consolesettings.cpp" />
+    <ClCompile Include="src\program\consolewindow.cpp" />
+    <ClCompile Include="test\version\cppversion.cpp" />
+    <ClCompile Include="src\utils\cursormaster.cpp" />
+    <ClCompile Include="src\debugdialog.cpp" />
+    <ClCompile Include="src\items\dip.cpp" />
+    <ClCompile Include="src\autoroute\drc.cpp" />
+    <ClCompile Include="src\connectors\ercdata.cpp" />
+    <ClCompile Include="src\utils\expandinglabel.cpp" />
+    <ClCompile Include="src\fapplication.cpp" />
+    <ClCompile Include="src\mainwindow\fdockwidget.cpp" />
+    <ClCompile Include="src\sketch\fgraphicsscene.cpp" />
+    <ClCompile Include="src\utils\fileprogressdialog.cpp" />
+    <ClCompile Include="src\help\firsttimehelpdialog.cpp" />
+    <ClCompile Include="src\utils\flineedit.cpp" />
+    <ClCompile Include="src\utils\fmessagebox.cpp" />
+    <ClCompile Include="src\utils\focusoutcombobox.cpp" />
+    <ClCompile Include="src\utils\folderutils.cpp" />
+    <ClCompile Include="src\eagle\fritzing2eagle.cpp" />
+    <ClCompile Include="src\mainwindow\fritzingwindow.cpp" />
+    <ClCompile Include="src\utils\fsizegrip.cpp" />
+    <ClCompile Include="src\fsplashscreen.cpp" />
+    <ClCompile Include="src\fsvgrenderer.cpp" />
+    <ClCompile Include="src\svg\gedaelement2svg.cpp" />
+    <ClCompile Include="src\svg\gedaelementgrammar.cpp" />
+    <ClCompile Include="src\svg\gedaelementlexer.cpp" />
+    <ClCompile Include="src\svg\gedaelementparser.cpp" />
+    <ClCompile Include="src\svg\gerbergenerator.cpp" />
+    <ClCompile Include="src\partsbinpalette\graphicsflowlayout.cpp" />
+    <ClCompile Include="src\utils\graphicsutils.cpp" />
+    <ClCompile Include="src\utils\graphutils.cpp" />
+    <ClCompile Include="src\dialogs\groundfillseeddialog.cpp" />
+    <ClCompile Include="src\items\groundplane.cpp" />
+    <ClCompile Include="src\svg\groundplanegenerator.cpp" />
+    <ClCompile Include="src\partseditor\hashpopulatewidget.cpp" />
+    <ClCompile Include="src\program\highlighter.cpp" />
+    <ClCompile Include="src\items\hole.cpp" />
+    <ClCompile Include="src\infoview\htmlinfoview.cpp" />
+    <ClCompile Include="src\sketch\infographicsview.cpp" />
+    <ClCompile Include="src\lib\quazip\ioapi.c" />
+    <ClCompile Include="src\items\itembase.cpp" />
+    <ClCompile Include="src\itemdrag.cpp" />
+    <ClCompile Include="src\items\jumperitem.cpp" />
+    <ClCompile Include="src\svg\kicad2svg.cpp" />
+    <ClCompile Include="src\svg\kicadmodule2svg.cpp" />
+    <ClCompile Include="src\partseditor\kicadmoduledialog.cpp" />
+    <ClCompile Include="src\svg\kicadschematic2svg.cpp" />
+    <ClCompile Include="src\layerattributes.cpp" />
+    <ClCompile Include="src\items\layerkinpaletteitem.cpp" />
+    <ClCompile Include="src\dock\layerpalette.cpp" />
+    <ClCompile Include="src\items\led.cpp" />
+    <ClCompile Include="src\utils\lockmanager.cpp" />
+    <ClCompile Include="src\items\logoitem.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\mainwindow\mainwindow.cpp" />
+    <ClCompile Include="src\mainwindow\mainwindow_dock.cpp" />
+    <ClCompile Include="src\mainwindow\mainwindow_export.cpp" />
+    <ClCompile Include="src\mainwindow\mainwindow_menu.cpp" />
+    <ClCompile Include="src\autoroute\mazerouter\mazerouter.cpp" />
+    <ClCompile Include="src\utils\misc.cpp" />
+    <ClCompile Include="src\model\modelbase.cpp" />
+    <ClCompile Include="src\model\modelpart.cpp" />
+    <ClCompile Include="src\model\modelpartshared.cpp" />
+    <ClCompile Include="src\version\modfiledialog.cpp" />
+    <ClCompile Include="src\items\moduleidnames.cpp" />
+    <ClCompile Include="src\items\mysterypart.cpp" />
+    <ClCompile Include="src\connectors\nonconnectoritem.cpp" />
+    <ClCompile Include="src\items\note.cpp" />
+    <ClCompile Include="src\items\pad.cpp" />
+    <ClCompile Include="src\items\paletteitem.cpp" />
+    <ClCompile Include="src\items\paletteitembase.cpp" />
+    <ClCompile Include="src\model\palettemodel.cpp" />
+    <ClCompile Include="src\autoroute\panelizer.cpp" />
+    <ClCompile Include="src\items\partfactory.cpp" />
+    <ClCompile Include="src\items\partlabel.cpp" />
+    <ClCompile Include="src\partsbinpalette\partsbincommands.cpp" />
+    <ClCompile Include="src\partsbinpalette\partsbiniconview.cpp" />
+    <ClCompile Include="src\partsbinpalette\partsbinlistview.cpp" />
+    <ClCompile Include="src\partsbinpalette\partsbinpalettewidget.cpp" />
+    <ClCompile Include="src\partsbinpalette\partsbinview.cpp" />
+    <ClCompile Include="src\version\partschecker.cpp" />
+    <ClCompile Include="src\sketch\pcbsketchwidget.cpp" />
+    <ClCompile Include="src\partseditor\pecommands.cpp" />
+    <ClCompile Include="src\partseditor\peconnectorsview.cpp" />
+    <ClCompile Include="src\partseditor\pegraphicsitem.cpp" />
+    <ClCompile Include="src\partseditor\pemainwindow.cpp" />
+    <ClCompile Include="src\partseditor\pemetadataview.cpp" />
+    <ClCompile Include="src\items\perfboard.cpp" />
+    <ClCompile Include="src\partseditor\pesvgview.cpp" />
+    <ClCompile Include="src\partseditor\petoolview.cpp" />
+    <ClCompile Include="src\partseditor\peutils.cpp" />
+    <ClCompile Include="src\items\pinheader.cpp" />
+    <ClCompile Include="src\dialogs\pinlabeldialog.cpp" />
+    <ClCompile Include="src\program\platform.cpp" />
+    <ClCompile Include="src\program\platformarduino.cpp" />
+    <ClCompile Include="src\program\platformlaunchpad.cpp" />
+    <ClCompile Include="src\program\platformpicaxe.cpp" />
+    <ClCompile Include="src\dialogs\prefsdialog.cpp" />
+    <ClCompile Include="src\processeventblocker.cpp" />
+    <ClCompile Include="src\program\programtab.cpp" />
+    <ClCompile Include="src\program\programwindow.cpp" />
+    <ClCompile Include="src\items\propertydef.cpp" />
+    <ClCompile Include="src\lib\quazip\quazip.cpp" />
+    <ClCompile Include="src\lib\quazip\quazipfile.cpp" />
+    <ClCompile Include="src\lib\quazip\quazipnewinfo.cpp" />
+    <ClCompile Include="src\dialogs\quotedialog.cpp" />
+    <ClCompile Include="src\utils\ratsnestcolors.cpp" />
+    <ClCompile Include="src\dialogs\recoverydialog.cpp" />
+    <ClCompile Include="src\items\resistor.cpp" />
+    <ClCompile Include="src\items\resizableboard.cpp" />
+    <ClCompile Include="src\utils\resizehandle.cpp" />
+    <ClCompile Include="src\items\ruler.cpp" />
+    <ClCompile Include="src\utils\s2s.cpp" />
+    <ClCompile Include="src\items\schematicframe.cpp" />
+    <ClCompile Include="src\utils\schematicrectconstants.cpp" />
+    <ClCompile Include="src\sketch\schematicsketchwidget.cpp" />
+    <ClCompile Include="src\items\schematicsubpart.cpp" />
+    <ClCompile Include="src\items\screwterminal.cpp" />
+    <ClCompile Include="src\autoroute\cmrouter\search.cpp" />
+    <ClCompile Include="src\autoroute\cmrouter\search2.cpp" />
+    <ClCompile Include="src\partsbinpalette\searchlineedit.cpp" />
+    <ClCompile Include="src\dialogs\setcolordialog.cpp" />
+    <ClCompile Include="src\mainwindow\sketchareawidget.cpp" />
+    <ClCompile Include="src\model\sketchmodel.cpp" />
+    <ClCompile Include="src\sketchtoolbutton.cpp" />
+    <ClCompile Include="src\sketch\sketchwidget.cpp" />
+    <ClCompile Include="src\referencemodel\sqlitereferencemodel.cpp" />
+    <ClCompile Include="src\partsbinpalette\binmanager\stacktabbar.cpp" />
+    <ClCompile Include="src\partsbinpalette\binmanager\stacktabwidget.cpp" />
+    <ClCompile Include="src\items\stripboard.cpp" />
+    <ClCompile Include="src\svg\svg2gerber.cpp" />
+    <ClCompile Include="src\svg\svgfilesplitter.cpp" />
+    <ClCompile Include="src\svg\svgflattener.cpp" />
+    <ClCompile Include="src\partsbinpalette\svgiconwidget.cpp" />
+    <ClCompile Include="src\connectors\svgidlayer.cpp" />
+    <ClCompile Include="src\svg\svgpathgrammar.cpp" />
+    <ClCompile Include="src\svg\svgpathlexer.cpp" />
+    <ClCompile Include="src\svg\svgpathparser.cpp" />
+    <ClCompile Include="src\svg\svgpathrunner.cpp" />
+    <ClCompile Include="src\svg\svgtext.cpp" />
+    <ClCompile Include="src\items\symbolpaletteitem.cpp" />
+    <ClCompile Include="src\program\syntaxer.cpp" />
+    <ClCompile Include="src\utils\textutils.cpp" />
+    <ClCompile Include="src\autoroute\cmrouter\tile.cpp" />
+    <ClCompile Include="src\help\tipsandtricks.cpp" />
+    <ClCompile Include="src\items\tracewire.cpp" />
+    <ClCompile Include="src\dialogs\translatorlistmodel.cpp" />
+    <ClCompile Include="src\program\trienode.cpp" />
+    <ClCompile Include="src\lib\quazip\unzip.c" />
+    <ClCompile Include="src\version\updatedialog.cpp" />
+    <ClCompile Include="src\version\version.cpp" />
+    <ClCompile Include="src\version\versionchecker.cpp" />
+    <ClCompile Include="src\items\via.cpp" />
+    <ClCompile Include="src\viewgeometry.cpp" />
+    <ClCompile Include="src\viewlayer.cpp" />
+    <ClCompile Include="src\items\virtualwire.cpp" />
+    <ClCompile Include="src\waitpushundostack.cpp" />
+    <ClCompile Include="src\sketch\welcomeview.cpp" />
+    <ClCompile Include="src\items\wire.cpp" />
+    <ClCompile Include="src\svg\x2svg.cpp" />
+    <ClCompile Include="src\lib\quazip\zip.c" />
+    <ClCompile Include="src\sketch\zoomablegraphicsview.cpp" />
+    <ClCompile Include="src\autoroute\zoomcontrols.cpp" />
+    <ClCompile Include="src\utils\zoomslider.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\lib\qtsysteminfo\QtSystemInfo.h" />
+    <QtMoc Include="src\help\aboutbox.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\utils\abstractstatesbutton.h" />
+    <QtMoc Include="src\utils\autoclosemessagebox.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\autoroute\autorouteprogressdialog.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\autoroute\autorouter.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\autoroute\autoroutersettingsdialog.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\partseditor\baseremovebutton.h" />
+    <QtMoc Include="src\utils\bendpointaction.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\utils\bezier.h" />
+    <ClInclude Include="src\utils\bezierdisplay.h" />
+    <QtMoc Include="src\partsbinpalette\binmanager\binmanager.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\utils\boundedregexpvalidator.h" />
+    <QtMoc Include="src\items\breadboard.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\sketch\breadboardsketchwidget.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\utils\bundler.h" />
+    <QtMoc Include="src\connectors\bus.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\connectors\busshared.h" />
+    <QtMoc Include="src\items\capacitor.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\utils\clickablelabel.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\items\clipablewire.h" />
+    <QtMoc Include="src\autoroute\cmrouter\cmrouter.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\commands.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\connectors\connector.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\connectors\connectoritem.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\connectors\connectorshared.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\program\console.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\program\consolesettings.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\program\consolewindow.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\lib\quazip\crypt.h" />
+    <QtMoc Include="src\utils\cursormaster.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\debugdialog.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_$(Configuration)dialog.cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\items\dip.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\autoroute\drc.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\connectors\ercdata.h" />
+    <QtMoc Include="src\utils\expandinglabel.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\utils\familypropertycombobox.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\fapplication.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\mainwindow\fdockwidget.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\sketch\fgraphicsscene.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\utils\fileprogressdialog.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\help\firsttimehelpdialog.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\utils\flineedit.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\utils\fmessagebox.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\utils\focusoutcombobox.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\utils\folderutils.h" />
+    <ClInclude Include="src\eagle\fritzing2eagle.h" />
+    <QtMoc Include="src\mainwindow\fritzingwindow.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\utils\fsizegrip.h" />
+    <QtMoc Include="src\fsplashscreen.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\fsvgrenderer.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\svg\gedaelement2svg.h" />
+    <ClInclude Include="src\svg\gedaelementgrammar_p.h" />
+    <ClInclude Include="src\svg\gedaelementlexer.h" />
+    <ClInclude Include="src\svg\gedaelementparser.h" />
+    <ClInclude Include="src\svg\gerbergenerator.h" />
+    <ClInclude Include="src\partsbinpalette\graphicsflowlayout.h" />
+    <ClInclude Include="src\utils\graphicsutils.h" />
+    <ClInclude Include="src\utils\graphutils.h" />
+    <QtMoc Include="src\dialogs\groundfillseeddialog.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\items\groundplane.h" />
+    <QtMoc Include="src\svg\groundplanegenerator.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\partseditor\hashpopulatewidget.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\program\highlighter.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\items\hole.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\infoview\htmlinfoview.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\sketch\infographicsview.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\installedfonts.h" />
+    <ClInclude Include="src\lib\quazip\ioapi.h" />
+    <QtMoc Include="src\items\itembase.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\itemdrag.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\items\jumperitem.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\svg\kicad2svg.h" />
+    <ClInclude Include="src\svg\kicadmodule2svg.h" />
+    <QtMoc Include="src\partseditor\kicadmoduledialog.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\svg\kicadschematic2svg.h" />
+    <ClInclude Include="src\layerattributes.h" />
+    <QtMoc Include="src\items\layerkinpaletteitem.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\dock\layerpalette.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\items\led.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\utils\lockmanager.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\items\logoitem.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\mainwindow\mainwindow.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\autoroute\mazerouter\mazerouter.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\utils\misc.h" />
+    <QtMoc Include="src\model\modelbase.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\model\modelpart.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\model\modelpartshared.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\version\modfiledialog.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\items\moduleidnames.h" />
+    <QtMoc Include="src\items\mysterypart.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\connectors\nonconnectoritem.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\items\note.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\items\pad.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\items\paletteitem.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\items\paletteitembase.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\model\palettemodel.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\autoroute\panelizer.h" />
+    <ClInclude Include="src\items\partfactory.h" />
+    <QtMoc Include="src\items\partlabel.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\partsbinpalette\partsbincommands.h" />
+    <QtMoc Include="src\partsbinpalette\partsbiniconview.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\partsbinpalette\partsbinlistview.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\partsbinpalette\partsbinpalettewidget.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\partsbinpalette\partsbinview.h" />
+    <ClInclude Include="src\version\partschecker.h" />
+    <QtMoc Include="src\sketch\pcbsketchwidget.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\partseditor\pecommands.h" />
+    <QtMoc Include="src\partseditor\peconnectorsview.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\partseditor\pegraphicsitem.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\partseditor\pemainwindow.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\partseditor\pemetadataview.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\items\perfboard.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\partseditor\pesvgview.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\partseditor\petoolview.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\partseditor\peutils.h" />
+    <QtMoc Include="src\items\pinheader.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\dialogs\pinlabeldialog.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\program\platform.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\program\platformarduino.h" />
+    <ClInclude Include="src\program\platformlaunchpad.h" />
+    <ClInclude Include="src\program\platformpicaxe.h" />
+    <QtMoc Include="src\dialogs\prefsdialog.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\processeventblocker.h" />
+    <QtMoc Include="src\program\programtab.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\program\programwindow.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\items\propertydef.h" />
+    <ClInclude Include="src\lib\quazip\quazip.h" />
+    <QtMoc Include="src\lib\quazip\quazipfile.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\lib\quazip\quazipfileinfo.h" />
+    <ClInclude Include="src\lib\quazip\quazipnewinfo.h" />
+    <QtMoc Include="src\dialogs\quotedialog.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\utils\ratsnestcolors.h" />
+    <QtMoc Include="src\dialogs\recoverydialog.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\referencemodel\referencemodel.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\items\resistor.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\items\resizableboard.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\utils\resizehandle.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\routingstatus.h" />
+    <QtMoc Include="src\items\ruler.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\utils\s2s.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\items\schematicframe.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\utils\schematicrectconstants.h" />
+    <QtMoc Include="src\sketch\schematicsketchwidget.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\items\schematicsubpart.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\items\screwterminal.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\partsbinpalette\searchlineedit.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\dialogs\setcolordialog.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\mainwindow\sketchareawidget.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\model\sketchmodel.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\sketchtoolbutton.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\sketch\sketchwidget.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\referencemodel\sqlitereferencemodel.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\partsbinpalette\binmanager\stacktabbar.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\partsbinpalette\binmanager\stacktabwidget.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\items\stripboard.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\svg\svg2gerber.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\svg\svgfilesplitter.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\svg\svgflattener.h" />
+    <QtMoc Include="src\partsbinpalette\svgiconwidget.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\connectors\svgidlayer.h" />
+    <ClInclude Include="src\svg\svgpathgrammar_p.h" />
+    <ClInclude Include="src\svg\svgpathlexer.h" />
+    <ClInclude Include="src\svg\svgpathparser.h" />
+    <QtMoc Include="src\svg\svgpathrunner.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\svg\svgtext.h" />
+    <QtMoc Include="src\items\symbolpaletteitem.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\program\syntaxer.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\utils\textutils.h" />
+    <ClInclude Include="src\autoroute\cmrouter\tile.h" />
+    <ClInclude Include="src\autoroute\cmrouter\tileutils.h" />
+    <QtMoc Include="src\help\tipsandtricks.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\items\tracewire.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\dialogs\translatorlistmodel.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\program\trienode.h" />
+    <ClInclude Include="src\lib\quazip\unzip.h" />
+    <QtMoc Include="src\version\updatedialog.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\version\version.h" />
+    <QtMoc Include="src\version\versionchecker.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\items\via.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\viewgeometry.h" />
+    <QtMoc Include="src\viewlayer.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\items\virtualwire.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\waitpushundostack.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\sketch\welcomeview.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\items\wire.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="src\svg\x2svg.h" />
+    <ClInclude Include="src\lib\quazip\zip.h" />
+    <QtMoc Include="src\sketch\zoomablegraphicsview.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\autoroute\zoomcontrols.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtMoc Include="src\utils\zoomslider.h">
+      <QtMocDir>..\$(Configuration)32</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\debug32\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -O3 -fno-omit-frame-pointer -Zi -MDd -std:c++14 -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;..\debug32\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\debug32\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\release32\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -O3 -fno-omit-frame-pointer -O2 -MD -std:c++14 -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;..\release32\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\release32\moc_predefs.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="translations\fritzing_ar.ts" />
+    <None Include="translations\fritzing_bg.ts" />
+    <None Include="translations\fritzing_bn.ts" />
+    <None Include="translations\fritzing_cs.ts" />
+    <None Include="translations\fritzing_da.ts" />
+    <None Include="translations\fritzing_de.ts" />
+    <None Include="translations\fritzing_el.ts" />
+    <None Include="translations\fritzing_en.ts" />
+    <None Include="translations\fritzing_es.ts" />
+    <None Include="translations\fritzing_et.ts" />
+    <None Include="translations\fritzing_fa.ts" />
+    <None Include="translations\fritzing_fr.ts" />
+    <None Include="translations\fritzing_gl.ts" />
+    <None Include="translations\fritzing_hi.ts" />
+    <None Include="translations\fritzing_hu.ts" />
+    <None Include="translations\fritzing_id.ts" />
+    <None Include="translations\fritzing_it.ts" />
+    <None Include="translations\fritzing_ja.ts" />
+    <None Include="translations\fritzing_ko.ts" />
+    <None Include="translations\fritzing_mk.ts" />
+    <None Include="translations\fritzing_mr.ts" />
+    <None Include="translations\fritzing_nl.ts" />
+    <None Include="translations\fritzing_pl.ts" />
+    <None Include="translations\fritzing_pt_br.ts" />
+    <None Include="translations\fritzing_pt_pt.ts" />
+    <None Include="translations\fritzing_ro.ts" />
+    <None Include="translations\fritzing_ru.ts" />
+    <None Include="translations\fritzing_sk.ts" />
+    <None Include="translations\fritzing_sl.ts" />
+    <None Include="translations\fritzing_sr.ts" />
+    <None Include="translations\fritzing_sv.ts" />
+    <None Include="translations\fritzing_th.ts" />
+    <None Include="translations\fritzing_tr.ts" />
+    <None Include="translations\fritzing_uk.ts" />
+    <None Include="translations\fritzing_ur.ts" />
+    <None Include="translations\fritzing_vi.ts" />
+    <None Include="translations\fritzing_zh_cn.ts" />
+    <None Include="translations\fritzing_zh_tw.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="src\program\consolesettings.ui">
+    </QtUic>
+    <QtUic Include="src\program\consolewindow.ui">
+    </QtUic>
+    <QtUic Include="src\version\modfiledialog.ui">
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\parts\svg\obsolete\schematic\0.3.schem.frame.svg" />
+    <None Include="resources\parts\svg\obsolete\schematic\0.3.schem.netlabel.svg" />
+    <None Include="resources\templates\0.3.schem.schematic_frame_template.txt" />
+    <None Include="resources\parts\core\30.20PerfboardModuleID.fzp" />
+    <None Include="resources\parts\core\30.20Stripboard2ModuleID.fzp" />
+    <None Include="resources\parts\core\30.20StripboardModuleID.fzp" />
+    <None Include="resources\parts\svg\core\breadboard\30.20perfboard.svg" />
+    <None Include="resources\images\AboutBoxLogoShield.png" />
+    <None Include="resources\bins\icons\Arduino-mono.png" />
+    <None Include="resources\bins\icons\Arduino.png" />
+    <None Include="resources\bins\icons\Contrib-mono.png" />
+    <None Include="resources\bins\icons\Contrib.png" />
+    <None Include="resources\bins\icons\Core-mono.png" />
+    <None Include="resources\bins\icons\Core.png" />
+    <None Include="resources\bins\icons\Custom1-mono.png" />
+    <None Include="resources\bins\icons\Custom1.png" />
+    <None Include="resources\fonts\DroidSans-Bold.ttf" />
+    <None Include="resources\fonts\DroidSans.ttf" />
+    <None Include="resources\fonts\DroidSansMono.ttf" />
+    <None Include="resources\bins\icons\Lilypad-mono.png" />
+    <None Include="resources\bins\icons\Lilypad.png" />
+    <None Include="resources\bins\icons\Mine-mono.png" />
+    <None Include="resources\bins\icons\Mine.png" />
+    <None Include="resources\fonts\NOTICE" />
+    <None Include="resources\fonts\OCRA.ttf" />
+    <None Include="resources\bins\icons\PICAXE-mono.png" />
+    <None Include="resources\bins\icons\PICAXE.png" />
+    <None Include="resources\bins\icons\Parallax-mono.png" />
+    <None Include="resources\bins\icons\Parallax.png" />
+    <None Include="resources\bins\icons\Pololu-mono.png" />
+    <None Include="resources\bins\icons\Pololu.png" />
+    <None Include="resources\bins\icons\Search.png" />
+    <None Include="resources\bins\icons\Snootlab-mono.png" />
+    <None Include="resources\bins\icons\Snootlab.png" />
+    <None Include="resources\bins\icons\SparkFun-mono.png" />
+    <None Include="resources\bins\icons\SparkFun.png" />
+    <None Include="resources\images\icons\TabScrollArrowButtonDownNormal.png" />
+    <None Include="resources\images\icons\TabScrollArrowButtonDownPressed.png" />
+    <None Include="resources\images\icons\TabScrollArrowButtonLeftNormal.png" />
+    <None Include="resources\images\icons\TabScrollArrowButtonLeftPressed.png" />
+    <None Include="resources\images\icons\TabScrollArrowButtonRightNormal.png" />
+    <None Include="resources\images\icons\TabScrollArrowButtonRightPressed.png" />
+    <None Include="resources\images\icons\TabScrollArrowButtonUpNormal.png" />
+    <None Include="resources\images\icons\TabScrollArrowButtonUpPressed.png" />
+    <None Include="resources\images\icons\TabWidgetBreadboardActive_icon.png" />
+    <None Include="resources\images\icons\TabWidgetBreadboardHover_icon.png" />
+    <None Include="resources\images\icons\TabWidgetBreadboardInactive_icon.png" />
+    <None Include="resources\images\icons\TabWidgetCodeActive_icon.png" />
+    <None Include="resources\images\icons\TabWidgetCodeHover_icon.png" />
+    <None Include="resources\images\icons\TabWidgetCodeInactive_icon.png" />
+    <None Include="resources\images\icons\TabWidgetPcbActive_icon.png" />
+    <None Include="resources\images\icons\TabWidgetPcbHover_icon.png" />
+    <None Include="resources\images\icons\TabWidgetPcbInactive_icon.png" />
+    <None Include="resources\images\icons\TabWidgetSchematicActive_icon.png" />
+    <None Include="resources\images\icons\TabWidgetSchematicHover_icon.png" />
+    <None Include="resources\images\icons\TabWidgetSchematicInactive_icon.png" />
+    <None Include="resources\images\icons\TabWidgetWelcomeActive_icon.png" />
+    <None Include="resources\images\icons\TabWidgetWelcomeHover_icon.png" />
+    <None Include="resources\images\icons\TabWidgetWelcomeInactive_icon.png" />
+    <None Include="resources\bins\icons\Temp-mono.png" />
+    <None Include="resources\bins\icons\Temp.png" />
+    <None Include="resources\images\icons\Toolbar_Icon_Order.png" />
+    <None Include="resources\images\icons\WS-blogLogo.png" />
+    <None Include="resources\images\icons\WS-donateLogo.png" />
+    <None Include="resources\images\icons\WS-fabLogo.png" />
+    <None Include="resources\images\icons\WS-fzz-icon.png" />
+    <None Include="resources\images\icons\WS-galleryLogo.png" />
+    <None Include="resources\images\icons\WS-new-icon.png" />
+    <None Include="resources\images\icons\WS-open-icon.png" />
+    <None Include="resources\images\icons\WS-shopLogo.png" />
+    <None Include="resources\images\aboutbox_CC.png" />
+    <None Include="resources\images\aboutbox_FHP.png" />
+    <None Include="resources\images\aboutbox_scrollfade.png" />
+    <None Include="resources\images\splash\april1st.png" />
+    <None Include="resources\images\icons\arrowButtonDown.png" />
+    <None Include="resources\images\icons\arrowButtonLeft.png" />
+    <None Include="resources\images\icons\arrowButtonRight.png" />
+    <None Include="resources\images\icons\arrowButtonUp.png" />
+    <None Include="resources\images\icons\asterisk.png" />
+    <None Include="resources\images\cursor\bendleg.bmp" />
+    <None Include="resources\images\cursor\bendleg_mask.bmp" />
+    <None Include="resources\images\cursor\bendpoint.bmp" />
+    <None Include="resources\images\cursor\bendpoint_mask.bmp" />
+    <None Include="resources\parts\core\blocker.fzp" />
+    <None Include="resources\parts\svg\core\icon\blocker.svg" />
+    <None Include="resources\parts\core\blocker0.fzp" />
+    <None Include="resources\parts\core\boardlogoimage.fzp" />
+    <None Include="resources\parts\core\boardlogoimage_one_layer.fzp" />
+    <None Include="resources\templates\bom.html" />
+    <None Include="resources\templates\bom_row.html" />
+    <None Include="resources\images\breadboard_icon.png" />
+    <None Include="resources\parts\svg\core\icon\breadboard_logo.svg" />
+    <None Include="resources\parts\svg\core\icon\breadboard_text.svg" />
+    <None Include="resources\parts\svg\core\breadboard\breadboardlogo.svg" />
+    <None Include="resources\parts\core\breadboardlogoimage.fzp" />
+    <None Include="resources\parts\core\breadboardlogotext.fzp" />
+    <None Include="resources\images\icons\check.png" />
+    <None Include="resources\images\icons\checkactive.png" />
+    <None Include="resources\images\icons\checkhover.png" />
+    <None Include="resources\parts\core\cmRuler.fzp" />
+    <None Include="resources\images\icons\combobox-arrow.png" />
+    <None Include="resources\parts\svg\core\icon\copper0_logo.svg" />
+    <None Include="resources\parts\svg\core\icon\copper0_text.svg" />
+    <None Include="resources\parts\core\copper0logoimage.fzp" />
+    <None Include="resources\parts\core\copper0logotext.fzp" />
+    <None Include="resources\parts\svg\core\icon\copper1_logo.svg" />
+    <None Include="resources\parts\svg\core\icon\copper1_text.svg" />
+    <None Include="resources\parts\svg\core\pcb\copper1logo.svg" />
+    <None Include="resources\parts\core\copper1logoimage.fzp" />
+    <None Include="resources\parts\core\copper1logotext.fzp" />
+    <None Include="resources\images\cursor\curve.bmp" />
+    <None Include="resources\images\cursor\curve_mask.bmp" />
+    <None Include="resources\parts\core\dcpower.fzp" />
+    <None Include="resources\images\icons\dockWidgetCloseHover_icon.png" />
+    <None Include="resources\images\icons\dockWidgetCloseNormal_icon.png" />
+    <None Include="resources\images\icons\dockWidgetClosePressed_icon.png" />
+    <None Include="resources\images\icons\dockWidgetCollapseHover_icon.png" />
+    <None Include="resources\images\icons\dockWidgetCollapseNormal_icon.png" />
+    <None Include="resources\images\icons\dockWidgetCollapsePressed_icon.png" />
+    <None Include="resources\images\icons\dockWidgetEmpty_icon.png" />
+    <None Include="resources\images\icons\dockWidgetFloatHover_icon.png" />
+    <None Include="resources\images\icons\dockWidgetFloatNormal_icon.png" />
+    <None Include="resources\images\icons\dockWidgetFloatPressed_icon.png" />
+    <None Include="resources\images\donate_zoom.png" />
+    <None Include="resources\images\dot.png" />
+    <None Include="resources\parts\core\ellipse_pcb.fzp" />
+    <None Include="resources\parts\svg\core\pcb\ellipse_pcb.svg" />
+    <None Include="resources\parts\core\ellipse_pcb_two_layers.fzp" />
+    <None Include="resources\images\splash\fab_logo_bar.png" />
+    <None Include="resources\images\splash\fab_slice1.png" />
+    <None Include="resources\images\splash\fab_slice2.png" />
+    <None Include="resources\images\splash\fab_slice3.png" />
+    <None Include="resources\images\splash\fab_slice4.png" />
+    <None Include="resources\images\splash\fab_slice5.png" />
+    <None Include="resources\images\splash\fab_slice6.png" />
+    <None Include="resources\images\icons\fabquote_button_hover.png" />
+    <None Include="resources\images\icons\fabquote_button_press.png" />
+    <None Include="resources\images\icons\fabquote_button_release.png" />
+    <None Include="resources\images\splash\fhp_logo_small.png" />
+    <None Include="resources\parts\svg\core\schematic\frame.svg" />
+    <None Include="resources\styles\fritzing.qss" />
+    <None Include="resources\images\fritzing_icon.png" />
+    <None Include="resources\images\fritzing_logo_background.png" />
+    <None Include="resources\templates\generic_dip_fzpTemplate.txt" />
+    <None Include="resources\templates\generic_female_10thin_double_pin_header_schem_template.txt" />
+    <None Include="resources\templates\generic_female_10thin_pin_header_schem_template.txt" />
+    <None Include="resources\templates\generic_female_pin_header_bread_2nd_template.txt" />
+    <None Include="resources\templates\generic_female_pin_header_bread_template.txt" />
+    <None Include="resources\templates\generic_female_pin_header_fzpTemplate.txt" />
+    <None Include="resources\templates\generic_female_pin_header_schem_template.txt" />
+    <None Include="resources\templates\generic_male_10thin_double_pin_header_schem_template.txt" />
+    <None Include="resources\templates\generic_male_10thin_pin_header_schem_template.txt" />
+    <None Include="resources\templates\generic_male_pin_header_bread_2nd_template.txt" />
+    <None Include="resources\templates\generic_male_pin_header_bread_template.txt" />
+    <None Include="resources\templates\generic_male_pin_header_schem_template.txt" />
+    <None Include="resources\templates\generic_rounded_female_pin_header_bread_2nd_template.txt" />
+    <None Include="resources\templates\generic_rounded_female_pin_header_bread_template.txt" />
+    <None Include="resources\templates\generic_sip_bread_template.txt" />
+    <None Include="resources\templates\generic_sip_connectorFzpTemplate.txt" />
+    <None Include="resources\templates\generic_sip_fzpTemplate.txt" />
+    <None Include="resources\parts\core\ground.fzp" />
+    <None Include="resources\parts\core\groundplane.fzp" />
+    <None Include="resources\parts\svg\core\icon\groundplane.svg" />
+    <None Include="resources\parts\svg\core\pcb\groundplane.svg" />
+    <None Include="resources\images\helpImageBreadboard.png" />
+    <None Include="resources\images\helpImagePCB.png" />
+    <None Include="resources\images\helpImageSchematic.png" />
+    <None Include="resources\parts\core\hole.fzp" />
+    <None Include="resources\parts\svg\core\icon\hole.svg" />
+    <None Include="resources\parts\svg\core\pcb\hole.svg" />
+    <None Include="resources\parts\svg\core\icon\iconPerfboard.svg" />
+    <None Include="resources\parts\svg\core\icon\iconStripboard.svg" />
+    <None Include="resources\images\icon_icon.png" />
+    <None Include="resources\parts\core\jumper.fzp" />
+    <None Include="resources\parts\svg\core\pcb\jumper.svg" />
+    <None Include="resources\templates\jumper_copper0LayerTemplate.txt" />
+    <None Include="resources\templates\jumper_jumperwiresLayerTemplate.txt" />
+    <None Include="resources\templates\jumper_pcb_svg_2nd_template.txt" />
+    <None Include="resources\templates\jumper_pcb_svg_template.txt" />
+    <None Include="resources\parts\svg\core\icon\jumpericon.svg" />
+    <None Include="resources\styles\linux-fritzing.qss" />
+    <None Include="resources\styles\linux-gnome-fritzing.qss" />
+    <None Include="resources\styles\linux-kde-oxygen-fritzing.qss" />
+    <None Include="resources\parts\svg\core\pcb\logo.svg" />
+    <None Include="resources\parts\core\logoimage.fzp" />
+    <None Include="resources\parts\core\logotext.fzp" />
+    <None Include="resources\styles\mac-fritzing.qss" />
+    <None Include="resources\images\cursor\magic_wand.bmp" />
+    <None Include="resources\images\cursor\magic_wand_mask.bmp" />
+    <None Include="resources\images\cursor\make_wire.bmp" />
+    <None Include="resources\images\cursor\make_wire_mask.bmp" />
+    <None Include="resources\bins\my_parts.fzb" />
+    <None Include="resources\templates\mystery_part_dipFzpTemplate.txt" />
+    <None Include="resources\templates\mystery_part_sipFzpTemplate.txt" />
+    <None Include="resources\parts\core\netlabel.fzp" />
+    <None Include="resources\parts\svg\core\schematic\netlabel.svg" />
+    <None Include="resources\parts\core\netlabel_left.fzp" />
+    <None Include="resources\images\cursor\new_bendpoint.bmp" />
+    <None Include="resources\images\cursor\new_bendpoint_mask.bmp" />
+    <None Include="resources\parts\core\newbreadboardlogoimage.fzp" />
+    <None Include="resources\parts\core\newcopper0logoimage.fzp" />
+    <None Include="resources\parts\core\newcopper1logoimage.fzp" />
+    <None Include="resources\parts\core\newlogoimage.fzp" />
+    <None Include="resources\styles\newpartseditor.qss" />
+    <None Include="resources\parts\core\newschematiclogoimage.fzp" />
+    <None Include="resources\parts\core\newsilkscreen0logoimage.fzp" />
+    <None Include="resources\images\icons\noArrow_icon.png" />
+    <None Include="resources\images\icons\nocheck.png" />
+    <None Include="resources\images\icons\noicon.png" />
+    <None Include="resources\parts\core\note.fzp" />
+    <None Include="resources\parts\svg\core\icon\note.svg" />
+    <None Include="resources\images\icons\noteResizeGrip.png" />
+    <None Include="resources\bins\order.xml" />
+    <None Include="resources\parts\core\pad.fzp" />
+    <None Include="resources\parts\svg\core\icon\pad.svg" />
+    <None Include="resources\parts\svg\core\pcb\pad.svg" />
+    <None Include="resources\parts\core\pad0.fzp" />
+    <None Include="resources\parts\svg\core\pcb\pad0.svg" />
+    <None Include="resources\images\part_lock.svg" />
+    <None Include="resources\images\cursor\part_move.bmp" />
+    <None Include="resources\images\cursor\part_move_mask.bmp" />
+    <None Include="resources\images\part_sticky.svg" />
+    <None Include="resources\images\icons\partsBinCombinedMenuHover_icon.png" />
+    <None Include="resources\images\icons\partsBinCombinedMenuPressed_icon.png" />
+    <None Include="resources\images\icons\partsBinCombinedMenu_icon.png" />
+    <None Include="resources\images\icons\partsEditorZoomInHorButton.png" />
+    <None Include="resources\images\icons\partsEditorZoomInVerButton.png" />
+    <None Include="resources\images\icons\partsEditorZoomOutHorButton.png" />
+    <None Include="resources\images\icons\partsEditorZoomOutVerButton.png" />
+    <None Include="resources\images\icons\parts_plural_v3_plur.png" />
+    <None Include="resources\images\icons\parts_plural_v3_sing.png" />
+    <None Include="resources\styles\partseditor.qss" />
+    <None Include="resources\images\pcb_icon.png" />
+    <None Include="resources\images\pcbs_2013.png" />
+    <None Include="resources\bins\pe.fzb" />
+    <None Include="resources\templates\perfboard_boardLayerTemplate.txt" />
+    <None Include="resources\templates\perfboard_connectorFzpTemplate.txt" />
+    <None Include="resources\templates\perfboard_connectorTemplate.txt" />
+    <None Include="resources\templates\perfboard_fzpTemplate.txt" />
+    <QtRcc Include="phoenixresources.qrc">
+    </QtRcc>
+    <None Include="resources\parts\core\power.fzp" />
+    <None Include="resources\parts\core\power_label.fzp" />
+    <None Include="resources\styles\programwindow.qss" />
+    <None Include="resources\properties.xml" />
+    <None Include="resources\ratsnestcolors.xml" />
+    <None Include="resources\parts\core\rectangle_pcb.fzp" />
+    <None Include="resources\parts\svg\core\icon\rectangle_pcb.svg" />
+    <None Include="resources\parts\svg\core\pcb\rectangle_pcb.svg" />
+    <None Include="resources\parts\core\rectangle_pcb_two_layers.fzp" />
+    <None Include="resources\images\remove_prop_enter.png" />
+    <None Include="resources\images\remove_prop_leave.png" />
+    <None Include="resources\images\cursor\rotate.bmp" />
+    <None Include="resources\images\cursor\rotate_mask.bmp" />
+    <None Include="resources\parts\core\roundrect_pcb.fzp" />
+    <None Include="resources\parts\svg\core\pcb\roundrect_pcb.svg" />
+    <None Include="resources\parts\core\roundrect_pcb_two_layers.fzp" />
+    <None Include="resources\images\cursor\rubberband_move.bmp" />
+    <None Include="resources\images\cursor\rubberband_move_mask.bmp" />
+    <None Include="resources\parts\svg\core\breadboard\ruler.svg" />
+    <None Include="resources\parts\svg\core\icon\rulericon.svg" />
+    <None Include="resources\images\cursor\scale.bmp" />
+    <None Include="resources\images\cursor\scale_mask.bmp" />
+    <None Include="resources\parts\core\schematic_frame.fzp" />
+    <None Include="resources\parts\svg\core\icon\schematic_frame_icon.svg" />
+    <None Include="resources\templates\schematic_frame_template.txt" />
+    <None Include="resources\images\schematic_icon.png" />
+    <None Include="resources\parts\svg\core\icon\schematic_logo.svg" />
+    <None Include="resources\parts\svg\core\icon\schematic_text.svg" />
+    <None Include="resources\parts\svg\core\schematic\schematiclogo.svg" />
+    <None Include="resources\parts\core\schematiclogoimage.fzp" />
+    <None Include="resources\parts\core\schematiclogotext.fzp" />
+    <None Include="resources\templates\screw_terminal_bread_template.txt" />
+    <None Include="resources\templates\screw_terminal_fzpTemplate.txt" />
+    <None Include="resources\bins\search.fzb" />
+    <None Include="resources\images\icons\searchField.png" />
+    <None Include="resources\images\icons\segmentedSwitcherXActiveDimmed.png" />
+    <None Include="resources\images\icons\segmentedSwitcherXActiveFocus.png" />
+    <None Include="resources\images\icons\segmentedSwitcherXActiveFocusHover.png" />
+    <None Include="resources\images\icons\segmentedSwitcherXInactiveDimmed.png" />
+    <None Include="resources\images\icons\segmentedSwitcherXInactiveFocus.png" />
+    <None Include="resources\images\icons\segmentedSwitcherXInactiveFocusHover.png" />
+    <None Include="resources\parts\core\silkscreen0logoimage.fzp" />
+    <None Include="resources\parts\core\silkscreen0logotext.fzp" />
+    <None Include="resources\parts\svg\core\icon\silkscreen_logo.svg" />
+    <None Include="resources\parts\svg\core\icon\silkscreen_text.svg" />
+    <None Include="resources\images\icons\smalToolarrow-inactive.png" />
+    <None Include="resources\images\icons\smalToolarrow-normal.png" />
+    <None Include="resources\images\icons\smalToolarrow-pressed.png" />
+    <None Include="resources\images\icons\spinArrowButtonDownNormal.png" />
+    <None Include="resources\images\icons\spinArrowButtonDownPressed.png" />
+    <None Include="resources\images\icons\spinArrowButtonUpNormal.png" />
+    <None Include="resources\images\icons\spinArrowButtonUpPressed.png" />
+    <None Include="resources\images\splash\splash.xml" />
+    <None Include="resources\images\splash\splash_progressbar.png" />
+    <None Include="resources\images\splash\splash_screen_start.png" />
+    <None Include="resources\images\splitterHandle.png" />
+    <None Include="resources\images\cursor\spot_face_cutter.bmp" />
+    <None Include="resources\images\cursor\spot_face_cutter_mask.bmp" />
+    <None Include="resources\templates\stripboards.xml" />
+    <None Include="resources\bins\temp.fzb" />
+    <None Include="resources\images\icons\toolbarActiveLayerBDisabled_icon.png" />
+    <None Include="resources\images\icons\toolbarActiveLayerBEnabled_icon.png" />
+    <None Include="resources\images\icons\toolbarActiveLayerBPressed_icon.png" />
+    <None Include="resources\images\icons\toolbarActiveLayerDisabled_icon.png" />
+    <None Include="resources\images\icons\toolbarActiveLayerEnabled_icon.png" />
+    <None Include="resources\images\icons\toolbarActiveLayerPressed_icon.png" />
+    <None Include="resources\images\icons\toolbarActiveLayerTDisabled_icon.png" />
+    <None Include="resources\images\icons\toolbarActiveLayerTEnabled_icon.png" />
+    <None Include="resources\images\icons\toolbarActiveLayerTPressed_icon.png" />
+    <None Include="resources\images\icons\toolbarAutorouteDisabled_icon.png" />
+    <None Include="resources\images\icons\toolbarAutorouteEnabled_icon.png" />
+    <None Include="resources\images\icons\toolbarAutoroutePressed_icon.png" />
+    <None Include="resources\images\icons\toolbarDiyDisabled_icon.png" />
+    <None Include="resources\images\icons\toolbarDiyEnabled_icon.png" />
+    <None Include="resources\images\icons\toolbarDiyPressed_icon.png" />
+    <None Include="resources\images\icons\toolbarExport_gbr_icon.png" />
+    <None Include="resources\images\icons\toolbarExport_gbx_icon.png" />
+    <None Include="resources\images\icons\toolbarExport_jpeg_icon.png" />
+    <None Include="resources\images\icons\toolbarExport_pdf_icon.png" />
+    <None Include="resources\images\icons\toolbarExport_png_icon.png" />
+    <None Include="resources\images\icons\toolbarExport_ps_icon.png" />
+    <None Include="resources\images\icons\toolbarFlipDisabled_icon.png" />
+    <None Include="resources\images\icons\toolbarFlipEnabled_icon.png" />
+    <None Include="resources\images\icons\toolbarFlipPressed_icon.png" />
+    <None Include="resources\images\icons\toolbarMonitorCodeDisabled_icon.png" />
+    <None Include="resources\images\icons\toolbarMonitorCodeEnabled_icon.png" />
+    <None Include="resources\images\icons\toolbarMonitorCodePressed_icon.png" />
+    <None Include="resources\images\icons\toolbarNewCodeDisabled_icon.png" />
+    <None Include="resources\images\icons\toolbarNewCodeEnabled_icon.png" />
+    <None Include="resources\images\icons\toolbarNewCodePressed_icon.png" />
+    <None Include="resources\images\icons\toolbarNotesDisabled_icon.png" />
+    <None Include="resources\images\icons\toolbarNotesEnabled_icon.png" />
+    <None Include="resources\images\icons\toolbarNotesPressed_icon.png" />
+    <None Include="resources\images\icons\toolbarOpenCodeDisabled_icon.png" />
+    <None Include="resources\images\icons\toolbarOpenCodeEnabled_icon.png" />
+    <None Include="resources\images\icons\toolbarOpenCodePressed_icon.png" />
+    <None Include="resources\images\icons\toolbarOrderDisabled_icon.png" />
+    <None Include="resources\images\icons\toolbarOrderEnabled_icon.png" />
+    <None Include="resources\images\icons\toolbarOrderPressed_icon.png" />
+    <None Include="resources\images\icons\toolbarProgramCodeDisabled_icon.png" />
+    <None Include="resources\images\icons\toolbarProgramCodeEnabled_icon.png" />
+    <None Include="resources\images\icons\toolbarProgramCodePressed_icon.png" />
+    <None Include="resources\images\icons\toolbarRotateDisabled_icon.png" />
+    <None Include="resources\images\icons\toolbarRotateEnabled_icon.png" />
+    <None Include="resources\images\icons\toolbarRotatePressed_icon.png" />
+    <None Include="resources\images\icons\toolbarSaveCodeDisabled_icon.png" />
+    <None Include="resources\images\icons\toolbarSaveCodeEnabled_icon.png" />
+    <None Include="resources\images\icons\toolbarSaveCodePressed_icon.png" />
+    <None Include="resources\images\icons\toolbarShareBG_icon.png" />
+    <None Include="resources\images\icons\toolbarShareDisabled_icon.png" />
+    <None Include="resources\images\icons\toolbarShareEnabled_icon.png" />
+    <None Include="resources\images\icons\toolbarSharePressed_icon.png" />
+    <None Include="resources\images\icons\toolbarViewFromBDisabled_icon.png" />
+    <None Include="resources\images\icons\toolbarViewFromBEnabled_icon.png" />
+    <None Include="resources\images\icons\toolbarViewFromBPressed_icon.png" />
+    <None Include="resources\images\icons\toolbarViewFromTDisabled_icon.png" />
+    <None Include="resources\images\icons\toolbarViewFromTEnabled_icon.png" />
+    <None Include="resources\images\icons\toolbarViewFromTPressed_icon.png" />
+    <None Include="resources\images\icons\toolbar_separator.png" />
+    <None Include="resources\styles\updatedialog.css" />
+    <None Include="resources\parts\core\via.fzp" />
+    <None Include="resources\parts\svg\core\icon\via.svg" />
+    <None Include="resources\parts\svg\core\pcb\via.svg" />
+    <None Include="resources\vias.xml" />
+    <None Include="resources\images\watermark_fritzing_outline.svg" />
+    <None Include="resources\images\welcome_kit.png" />
+    <None Include="resources\styles\win-fritzing.qss" />
+    <None Include="resources\parts\core\wire.fzp" />
+    <None Include="resources\parts\svg\core\breadboard\wire.svg" />
+    <None Include="resources\parts\svg\core\icon\wireicon.svg" />
+    <None Include="resources\images\icons\zoomSlider.png" />
+    <None Include="resources\images\icons\zoomSliderHover.png" />
+    <None Include="resources\images\icons\zoomSliderMinus.png" />
+    <None Include="resources\images\icons\zoomSliderMinusPressed.png" />
+    <None Include="resources\images\icons\zoomSliderPlus.png" />
+    <None Include="resources\images\icons\zoomSliderPlusPressed.png" />
+    <None Include="resources\zoomfactors.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="fritzing.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

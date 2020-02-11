@@ -52,6 +52,8 @@ extern "C" {
 
 #ifndef _ZLIB_H
 
+
+#define ZLIB_WINAPI
 #include <zlib.h>
 
 #endif

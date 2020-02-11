@@ -12,6 +12,7 @@
 
 
 
+#define ZLIB_WINAPI
 #include <zlib.h>
 
 

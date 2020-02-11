@@ -40,6 +40,7 @@ woven in by Terry Thorsen 1/2003.
 #include <string.h>
 
 
+#define ZLIB_WINAPI
 #include <zlib.h>
 
 #include "unzip.h"

@@ -49,6 +49,8 @@
 extern "C" {
 #endif
 
+
+#define ZLIB_WINAPI
 #include <zlib.h>
 
 

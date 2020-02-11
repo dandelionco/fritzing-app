@@ -1,0 +1,2733 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\autoroute\cmrouter\DBcell.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\qtsysteminfo\QtSystemInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\help\aboutbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\autoclosemessagebox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\autoroute\autorouteprogressdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\autoroute\autorouter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\autoroute\autoroutersettingsdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\bendpointaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\bezier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\bezierdisplay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\partsbinpalette\binmanager\binmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\breadboard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sketch\breadboardsketchwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\connectors\bus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\connectors\busshared.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\capacitor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\clickablelabel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\clipablewire.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\autoroute\cmrouter\cmrouter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commands.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\connectors\connector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\connectors\connectoritem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\connectors\connectorshared.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\program\console.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\program\consolesettings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\program\consolewindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test\version\cppversion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\cursormaster.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\debugdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\dip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\autoroute\drc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\connectors\ercdata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\expandinglabel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fapplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mainwindow\fdockwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sketch\fgraphicsscene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\fileprogressdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\help\firsttimehelpdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\flineedit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\fmessagebox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\focusoutcombobox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\folderutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\eagle\fritzing2eagle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mainwindow\fritzingwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\fsizegrip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fsplashscreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fsvgrenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\svg\gedaelement2svg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\svg\gedaelementgrammar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\svg\gedaelementlexer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\svg\gedaelementparser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\svg\gerbergenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\partsbinpalette\graphicsflowlayout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\graphicsutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\graphutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dialogs\groundfillseeddialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\groundplane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\svg\groundplanegenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\partseditor\hashpopulatewidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\program\highlighter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\hole.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\infoview\htmlinfoview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sketch\infographicsview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\quazip\ioapi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\itembase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\itemdrag.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\jumperitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\svg\kicad2svg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\svg\kicadmodule2svg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\partseditor\kicadmoduledialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\svg\kicadschematic2svg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\layerattributes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\layerkinpaletteitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dock\layerpalette.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\led.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\lockmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\logoitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mainwindow\mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mainwindow\mainwindow_dock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mainwindow\mainwindow_export.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mainwindow\mainwindow_menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\autoroute\mazerouter\mazerouter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\misc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\modelbase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\modelpart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\modelpartshared.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\version\modfiledialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\moduleidnames.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\mysterypart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\connectors\nonconnectoritem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\note.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\pad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\paletteitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\paletteitembase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\palettemodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\autoroute\panelizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\partfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\partlabel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\partsbinpalette\partsbincommands.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\partsbinpalette\partsbiniconview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\partsbinpalette\partsbinlistview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\partsbinpalette\partsbinpalettewidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\partsbinpalette\partsbinview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\version\partschecker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sketch\pcbsketchwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\partseditor\pecommands.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\partseditor\peconnectorsview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\partseditor\pegraphicsitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\partseditor\pemainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\partseditor\pemetadataview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\perfboard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\partseditor\pesvgview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\partseditor\petoolview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\partseditor\peutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\pinheader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dialogs\pinlabeldialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\program\platform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\program\platformarduino.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\program\platformlaunchpad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\program\platformpicaxe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dialogs\prefsdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\processeventblocker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\program\programtab.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\program\programwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\propertydef.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\quazip\quazip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\quazip\quazipfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\quazip\quazipnewinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dialogs\quotedialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\ratsnestcolors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dialogs\recoverydialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\resistor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\resizableboard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\resizehandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\ruler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\s2s.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\schematicframe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\schematicrectconstants.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sketch\schematicsketchwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\schematicsubpart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\screwterminal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\autoroute\cmrouter\search.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\autoroute\cmrouter\search2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\partsbinpalette\searchlineedit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dialogs\setcolordialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mainwindow\sketchareawidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\sketchmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sketchtoolbutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sketch\sketchwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\referencemodel\sqlitereferencemodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\partsbinpalette\binmanager\stacktabbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\partsbinpalette\binmanager\stacktabwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\stripboard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\svg\svg2gerber.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\svg\svgfilesplitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\svg\svgflattener.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\partsbinpalette\svgiconwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\connectors\svgidlayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\svg\svgpathgrammar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\svg\svgpathlexer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\svg\svgpathparser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\svg\svgpathrunner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\svg\svgtext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\symbolpaletteitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\program\syntaxer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\textutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\autoroute\cmrouter\tile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\help\tipsandtricks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\tracewire.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dialogs\translatorlistmodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\program\trienode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\quazip\unzip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\version\updatedialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\version\version.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\version\versionchecker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\via.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\viewgeometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\viewlayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\virtualwire.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\waitpushundostack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sketch\welcomeview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\items\wire.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\svg\x2svg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\quazip\zip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sketch\zoomablegraphicsview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\autoroute\zoomcontrols.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\zoomslider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\lib\qtsysteminfo\QtSystemInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\help\aboutbox.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\utils\abstractstatesbutton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\utils\autoclosemessagebox.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\autoroute\autorouteprogressdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\autoroute\autorouter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\autoroute\autoroutersettingsdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\partseditor\baseremovebutton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\utils\bendpointaction.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\utils\bezier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\bezierdisplay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\partsbinpalette\binmanager\binmanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\utils\boundedregexpvalidator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\items\breadboard.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\sketch\breadboardsketchwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\utils\bundler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\connectors\bus.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\connectors\busshared.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\items\capacitor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\utils\clickablelabel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\items\clipablewire.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\autoroute\cmrouter\cmrouter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\commands.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\connectors\connector.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\connectors\connectoritem.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\connectors\connectorshared.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\program\console.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\program\consolesettings.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\program\consolewindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\lib\quazip\crypt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\utils\cursormaster.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\debugdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\items\dip.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\autoroute\drc.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\connectors\ercdata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\utils\expandinglabel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\utils\familypropertycombobox.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\fapplication.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\mainwindow\fdockwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\sketch\fgraphicsscene.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\utils\fileprogressdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\help\firsttimehelpdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\utils\flineedit.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\utils\fmessagebox.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\utils\focusoutcombobox.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\utils\folderutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\eagle\fritzing2eagle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\mainwindow\fritzingwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\utils\fsizegrip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\fsplashscreen.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\fsvgrenderer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\svg\gedaelement2svg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\svg\gedaelementgrammar_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\svg\gedaelementlexer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\svg\gedaelementparser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\svg\gerbergenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\partsbinpalette\graphicsflowlayout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\graphicsutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\graphutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\dialogs\groundfillseeddialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\items\groundplane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\svg\groundplanegenerator.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\partseditor\hashpopulatewidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\program\highlighter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\items\hole.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\infoview\htmlinfoview.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\sketch\infographicsview.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\installedfonts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\quazip\ioapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\items\itembase.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\itemdrag.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\items\jumperitem.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\svg\kicad2svg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\svg\kicadmodule2svg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\partseditor\kicadmoduledialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\svg\kicadschematic2svg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layerattributes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\items\layerkinpaletteitem.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\dock\layerpalette.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\items\led.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\utils\lockmanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\items\logoitem.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\mainwindow\mainwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\autoroute\mazerouter\mazerouter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\utils\misc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\model\modelbase.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\model\modelpart.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\model\modelpartshared.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\version\modfiledialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\items\moduleidnames.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\items\mysterypart.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\connectors\nonconnectoritem.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\items\note.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\items\pad.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\items\paletteitem.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\items\paletteitembase.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\model\palettemodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\autoroute\panelizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\items\partfactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\items\partlabel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\partsbinpalette\partsbincommands.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\partsbinpalette\partsbiniconview.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\partsbinpalette\partsbinlistview.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\partsbinpalette\partsbinpalettewidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\partsbinpalette\partsbinview.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\version\partschecker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\sketch\pcbsketchwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\partseditor\pecommands.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\partseditor\peconnectorsview.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\partseditor\pegraphicsitem.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\partseditor\pemainwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\partseditor\pemetadataview.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\items\perfboard.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\partseditor\pesvgview.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\partseditor\petoolview.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\partseditor\peutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\items\pinheader.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\dialogs\pinlabeldialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\program\platform.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\program\platformarduino.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\program\platformlaunchpad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\program\platformpicaxe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\dialogs\prefsdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\processeventblocker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\program\programtab.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\program\programwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\items\propertydef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\quazip\quazip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\lib\quazip\quazipfile.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\lib\quazip\quazipfileinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\quazip\quazipnewinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\dialogs\quotedialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\utils\ratsnestcolors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\dialogs\recoverydialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\referencemodel\referencemodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\items\resistor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\items\resizableboard.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\utils\resizehandle.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\routingstatus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\items\ruler.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\utils\s2s.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\items\schematicframe.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\utils\schematicrectconstants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\sketch\schematicsketchwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\items\schematicsubpart.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\items\screwterminal.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\partsbinpalette\searchlineedit.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\dialogs\setcolordialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\mainwindow\sketchareawidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\model\sketchmodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\sketchtoolbutton.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\sketch\sketchwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\referencemodel\sqlitereferencemodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\partsbinpalette\binmanager\stacktabbar.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\partsbinpalette\binmanager\stacktabwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\items\stripboard.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\svg\svg2gerber.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\svg\svgfilesplitter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\svg\svgflattener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\partsbinpalette\svgiconwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\connectors\svgidlayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\svg\svgpathgrammar_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\svg\svgpathlexer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\svg\svgpathparser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\svg\svgpathrunner.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\svg\svgtext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\items\symbolpaletteitem.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\program\syntaxer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\utils\textutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\autoroute\cmrouter\tile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\autoroute\cmrouter\tileutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\help\tipsandtricks.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\items\tracewire.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\dialogs\translatorlistmodel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\program\trienode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\quazip\unzip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\version\updatedialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\version\version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\version\versionchecker.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\items\via.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\viewgeometry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\viewlayer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\items\virtualwire.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\waitpushundostack.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\sketch\welcomeview.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\items\wire.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\svg\x2svg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\quazip\zip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\sketch\zoomablegraphicsview.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\autoroute\zoomcontrols.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\utils\zoomslider.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <CustomBuild Include="..\debug32\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\release32\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="translations\fritzing_ar.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_bg.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_bn.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_cs.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_da.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_de.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_el.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_en.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_es.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_et.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_fa.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_fr.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_gl.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_hi.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_hu.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_id.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_it.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_ja.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_ko.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_mk.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_mr.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_nl.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_pl.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_pt_br.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_pt_pt.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_ro.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_ru.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_sk.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_sl.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_sr.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_sv.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_th.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_tr.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_uk.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_ur.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_vi.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_zh_cn.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="translations\fritzing_zh_tw.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="src\program\consolesettings.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\program\consolewindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\version\modfiledialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\parts\svg\obsolete\schematic\0.3.schem.frame.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\obsolete\schematic\0.3.schem.netlabel.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\0.3.schem.schematic_frame_template.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\30.20PerfboardModuleID.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\30.20Stripboard2ModuleID.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\30.20StripboardModuleID.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\breadboard\30.20perfboard.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\AboutBoxLogoShield.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\bins\icons\Arduino-mono.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\bins\icons\Arduino.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\bins\icons\Contrib-mono.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\bins\icons\Contrib.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\bins\icons\Core-mono.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\bins\icons\Core.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\bins\icons\Custom1-mono.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\bins\icons\Custom1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\fonts\DroidSans-Bold.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\fonts\DroidSans.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\fonts\DroidSansMono.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\bins\icons\Lilypad-mono.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\bins\icons\Lilypad.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\bins\icons\Mine-mono.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\bins\icons\Mine.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\fonts\NOTICE">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\fonts\OCRA.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\bins\icons\PICAXE-mono.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\bins\icons\PICAXE.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\bins\icons\Parallax-mono.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\bins\icons\Parallax.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\bins\icons\Pololu-mono.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\bins\icons\Pololu.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\bins\icons\Search.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\bins\icons\Snootlab-mono.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\bins\icons\Snootlab.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\bins\icons\SparkFun-mono.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\bins\icons\SparkFun.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\TabScrollArrowButtonDownNormal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\TabScrollArrowButtonDownPressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\TabScrollArrowButtonLeftNormal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\TabScrollArrowButtonLeftPressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\TabScrollArrowButtonRightNormal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\TabScrollArrowButtonRightPressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\TabScrollArrowButtonUpNormal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\TabScrollArrowButtonUpPressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\TabWidgetBreadboardActive_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\TabWidgetBreadboardHover_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\TabWidgetBreadboardInactive_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\TabWidgetCodeActive_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\TabWidgetCodeHover_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\TabWidgetCodeInactive_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\TabWidgetPcbActive_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\TabWidgetPcbHover_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\TabWidgetPcbInactive_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\TabWidgetSchematicActive_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\TabWidgetSchematicHover_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\TabWidgetSchematicInactive_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\TabWidgetWelcomeActive_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\TabWidgetWelcomeHover_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\TabWidgetWelcomeInactive_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\bins\icons\Temp-mono.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\bins\icons\Temp.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\Toolbar_Icon_Order.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\WS-blogLogo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\WS-donateLogo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\WS-fabLogo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\WS-fzz-icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\WS-galleryLogo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\WS-new-icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\WS-open-icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\WS-shopLogo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\aboutbox_CC.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\aboutbox_FHP.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\aboutbox_scrollfade.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\splash\april1st.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\arrowButtonDown.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\arrowButtonLeft.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\arrowButtonRight.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\arrowButtonUp.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\asterisk.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\cursor\bendleg.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\cursor\bendleg_mask.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\cursor\bendpoint.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\cursor\bendpoint_mask.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\blocker.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\icon\blocker.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\blocker0.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\boardlogoimage.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\boardlogoimage_one_layer.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\bom.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\bom_row.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\breadboard_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\icon\breadboard_logo.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\icon\breadboard_text.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\breadboard\breadboardlogo.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\breadboardlogoimage.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\breadboardlogotext.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\check.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\checkactive.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\checkhover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\cmRuler.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\combobox-arrow.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\icon\copper0_logo.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\icon\copper0_text.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\copper0logoimage.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\copper0logotext.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\icon\copper1_logo.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\icon\copper1_text.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\pcb\copper1logo.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\copper1logoimage.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\copper1logotext.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\cursor\curve.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\cursor\curve_mask.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\dcpower.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\dockWidgetCloseHover_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\dockWidgetCloseNormal_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\dockWidgetClosePressed_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\dockWidgetCollapseHover_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\dockWidgetCollapseNormal_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\dockWidgetCollapsePressed_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\dockWidgetEmpty_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\dockWidgetFloatHover_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\dockWidgetFloatNormal_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\dockWidgetFloatPressed_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\donate_zoom.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\dot.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\ellipse_pcb.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\pcb\ellipse_pcb.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\ellipse_pcb_two_layers.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\splash\fab_logo_bar.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\splash\fab_slice1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\splash\fab_slice2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\splash\fab_slice3.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\splash\fab_slice4.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\splash\fab_slice5.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\splash\fab_slice6.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\fabquote_button_hover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\fabquote_button_press.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\fabquote_button_release.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\splash\fhp_logo_small.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\schematic\frame.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\styles\fritzing.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\fritzing_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\fritzing_logo_background.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\generic_dip_fzpTemplate.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\generic_female_10thin_double_pin_header_schem_template.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\generic_female_10thin_pin_header_schem_template.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\generic_female_pin_header_bread_2nd_template.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\generic_female_pin_header_bread_template.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\generic_female_pin_header_fzpTemplate.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\generic_female_pin_header_schem_template.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\generic_male_10thin_double_pin_header_schem_template.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\generic_male_10thin_pin_header_schem_template.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\generic_male_pin_header_bread_2nd_template.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\generic_male_pin_header_bread_template.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\generic_male_pin_header_schem_template.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\generic_rounded_female_pin_header_bread_2nd_template.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\generic_rounded_female_pin_header_bread_template.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\generic_sip_bread_template.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\generic_sip_connectorFzpTemplate.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\generic_sip_fzpTemplate.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\ground.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\groundplane.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\icon\groundplane.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\pcb\groundplane.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\helpImageBreadboard.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\helpImagePCB.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\helpImageSchematic.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\hole.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\icon\hole.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\pcb\hole.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\icon\iconPerfboard.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\icon\iconStripboard.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icon_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\jumper.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\pcb\jumper.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\jumper_copper0LayerTemplate.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\jumper_jumperwiresLayerTemplate.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\jumper_pcb_svg_2nd_template.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\jumper_pcb_svg_template.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\icon\jumpericon.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\styles\linux-fritzing.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\styles\linux-gnome-fritzing.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\styles\linux-kde-oxygen-fritzing.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\pcb\logo.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\logoimage.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\logotext.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\styles\mac-fritzing.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\cursor\magic_wand.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\cursor\magic_wand_mask.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\cursor\make_wire.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\cursor\make_wire_mask.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\bins\my_parts.fzb">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\mystery_part_dipFzpTemplate.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\mystery_part_sipFzpTemplate.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\netlabel.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\schematic\netlabel.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\netlabel_left.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\cursor\new_bendpoint.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\cursor\new_bendpoint_mask.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\newbreadboardlogoimage.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\newcopper0logoimage.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\newcopper1logoimage.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\newlogoimage.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\styles\newpartseditor.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\newschematiclogoimage.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\newsilkscreen0logoimage.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\noArrow_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\nocheck.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\noicon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\note.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\icon\note.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\noteResizeGrip.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\bins\order.xml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\pad.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\icon\pad.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\pcb\pad.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\pad0.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\pcb\pad0.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\part_lock.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\cursor\part_move.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\cursor\part_move_mask.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\part_sticky.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\partsBinCombinedMenuHover_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\partsBinCombinedMenuPressed_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\partsBinCombinedMenu_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\partsEditorZoomInHorButton.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\partsEditorZoomInVerButton.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\partsEditorZoomOutHorButton.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\partsEditorZoomOutVerButton.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\parts_plural_v3_plur.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\parts_plural_v3_sing.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\styles\partseditor.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\pcb_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\pcbs_2013.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\bins\pe.fzb">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\perfboard_boardLayerTemplate.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\perfboard_connectorFzpTemplate.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\perfboard_connectorTemplate.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\perfboard_fzpTemplate.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="phoenixresources.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="resources\parts\core\power.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\power_label.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\styles\programwindow.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\properties.xml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\ratsnestcolors.xml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\rectangle_pcb.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\icon\rectangle_pcb.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\pcb\rectangle_pcb.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\rectangle_pcb_two_layers.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\remove_prop_enter.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\remove_prop_leave.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\cursor\rotate.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\cursor\rotate_mask.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\roundrect_pcb.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\pcb\roundrect_pcb.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\roundrect_pcb_two_layers.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\cursor\rubberband_move.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\cursor\rubberband_move_mask.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\breadboard\ruler.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\icon\rulericon.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\cursor\scale.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\cursor\scale_mask.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\schematic_frame.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\icon\schematic_frame_icon.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\schematic_frame_template.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\schematic_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\icon\schematic_logo.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\icon\schematic_text.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\schematic\schematiclogo.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\schematiclogoimage.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\schematiclogotext.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\screw_terminal_bread_template.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\screw_terminal_fzpTemplate.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\bins\search.fzb">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\searchField.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\segmentedSwitcherXActiveDimmed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\segmentedSwitcherXActiveFocus.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\segmentedSwitcherXActiveFocusHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\segmentedSwitcherXInactiveDimmed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\segmentedSwitcherXInactiveFocus.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\segmentedSwitcherXInactiveFocusHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\silkscreen0logoimage.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\silkscreen0logotext.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\icon\silkscreen_logo.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\icon\silkscreen_text.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\smalToolarrow-inactive.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\smalToolarrow-normal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\smalToolarrow-pressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\spinArrowButtonDownNormal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\spinArrowButtonDownPressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\spinArrowButtonUpNormal.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\spinArrowButtonUpPressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\splash\splash.xml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\splash\splash_progressbar.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\splash\splash_screen_start.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\splitterHandle.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\cursor\spot_face_cutter.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\cursor\spot_face_cutter_mask.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\templates\stripboards.xml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\bins\temp.fzb">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarActiveLayerBDisabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarActiveLayerBEnabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarActiveLayerBPressed_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarActiveLayerDisabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarActiveLayerEnabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarActiveLayerPressed_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarActiveLayerTDisabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarActiveLayerTEnabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarActiveLayerTPressed_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarAutorouteDisabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarAutorouteEnabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarAutoroutePressed_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarDiyDisabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarDiyEnabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarDiyPressed_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarExport_gbr_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarExport_gbx_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarExport_jpeg_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarExport_pdf_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarExport_png_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarExport_ps_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarFlipDisabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarFlipEnabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarFlipPressed_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarMonitorCodeDisabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarMonitorCodeEnabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarMonitorCodePressed_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarNewCodeDisabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarNewCodeEnabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarNewCodePressed_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarNotesDisabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarNotesEnabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarNotesPressed_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarOpenCodeDisabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarOpenCodeEnabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarOpenCodePressed_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarOrderDisabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarOrderEnabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarOrderPressed_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarProgramCodeDisabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarProgramCodeEnabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarProgramCodePressed_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarRotateDisabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarRotateEnabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarRotatePressed_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarSaveCodeDisabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarSaveCodeEnabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarSaveCodePressed_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarShareBG_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarShareDisabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarShareEnabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarSharePressed_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarViewFromBDisabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarViewFromBEnabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarViewFromBPressed_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarViewFromTDisabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarViewFromTEnabled_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbarViewFromTPressed_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\toolbar_separator.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\styles\updatedialog.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\via.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\icon\via.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\pcb\via.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\vias.xml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\watermark_fritzing_outline.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\welcome_kit.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\styles\win-fritzing.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\core\wire.fzp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\breadboard\wire.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\parts\svg\core\icon\wireicon.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\zoomSlider.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\zoomSliderHover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\zoomSliderMinus.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\zoomSliderMinusPressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\zoomSliderPlus.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\images\icons\zoomSliderPlusPressed.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\zoomfactors.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="fritzing.rc" />
+  </ItemGroup>
+</Project>

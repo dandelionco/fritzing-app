@@ -16,6 +16,7 @@
 #include <time.h>
 
 
+#define ZLIB_WINAPI
 #include <zlib.h>
 
 
