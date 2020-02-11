@@ -108,7 +108,8 @@ unix {
             LIBS += -lz
         }
     }
-
+    
+    LIBS += -L/usr/lib/x86_64-linux-gnu -lgit2 -lhttp_parser -lssh2
     isEmpty(PREFIX) {
         PREFIX = /usr
     }

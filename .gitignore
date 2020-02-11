@@ -61,3 +61,7 @@ ehthumbs.db
 Thumbs.db
 .bash_history
 saved_state
+
+# DANDELION MODS
+################
+config.tests/boost/
