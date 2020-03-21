@@ -1,5 +1,13 @@
 # Fritzing
 
+## ------------------------ DANDELION BUILD NOTES ------------------------
+1. Install Deps: `sudo apt install qt5-default qtcreator libboost-all-dev cmake libssl-dev libqt5serialport5-dev libqt5svg5-dev libssh2-1-dev libhttp-parser-dev`
+2. Generally their instructions are right, but be sure and unzip `libgit2.x.x` into a folder called JUST `libgit2` no suffix.
+3. Also don't forget at the end of building `libgit2` the extra `sudo cmake install` step (see their doc for specifics) but Ubuntu 19.x and up definitely still need this extra step!
+4. The QT build/project as is may not find the output executable. It's in the build folder one level up from `fritzing-app`.
+------------------------------------------------
+
+
 |Branch|Badge|
 |------|-----|
 |master|[![Build Status](https://travis-ci.org/fritzing/fritzing-app.svg?branch=master)](https://travis-ci.org/fritzing/fritzing-app)|
